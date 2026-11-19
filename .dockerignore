@@ -1,14 +1,10 @@
 .git
 .next
 node_modules
-npm-debug.log*
-.pnpm-debug.log*
 .env*
-!.env.example
 .vercel
 Dockerfile
-compose*.yaml
-docker-compose*.yml
+compose.yaml
 .dockerignore
 README.md
 *.tsbuildinfo

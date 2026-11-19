@@ -1,17 +1,10 @@
 services:
   web:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    build: .
     image: test-web:latest
     restart: unless-stopped
     ports:
-      - "${PORT:-3000}:3000"
-    env_file:
-      - path: .env.production
-        required: false
-    environment:
-      NODE_ENV: production
+      - "3000:3000"
     read_only: true
     tmpfs:
       - /tmp
